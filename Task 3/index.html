@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EduWeb week 2 Task 1</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      Stwórz czat, który wykorzystywał będzie serwer utworzony za pomocą platformy Node.js, a także protokółWebSockets, który umożliwi dwukierunkowe przesyłanie danych. Daj użytkownikom możliwość podania swojego pseudonimu. Zaimplementuj równieżwyświetlanie statusów, gdy ktoś dołączy do czata lub czat opuści. Wszystkie przesyłane wiadomości, a także statusy, powinny być widoczne dla wszystkich podłączonych klientow
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <form class="form-inline">
+        <div class="form-group">
+          <input type="text" class="form-control" id="nick" placeholder="nick">
+        </div>
+        <button class="btn btn-default" id="join">Dołącz</button>
+      </form>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="chatWindow" class="well"> 
+<!--
+          <div class="chatRow">
+            <span class="time">20:29:46</span>
+            <span class="status">Mirek podłączył się do czatu</span>
+          </div>
+          <div class="chatRow">
+            <span class="time">20:30:11</span>
+            <span class="name">Mirek</span>
+            <span class="message">Hej, z tej strony Mirek!</span>
+          </div>
+          <div class="chatRow">
+            <span class="time">20:30:55</span>
+            <span class="name">Piotr</span>
+            <span class="message">No hej, co u Ciebie?</span>
+          </div> 
+-->
+        </div>    
+      </div>
+    </div>  
+
+      <div class="form-group">
+        <textarea class="form-control" id="msg" rows="5"></textarea>
+      </div>  
+  <button class="btn btn-primary" id="sendBtn" disabled>Wyślij</button>
+</div>  
+	<script src="app/app.js"></script>	
+</body>
+</html>

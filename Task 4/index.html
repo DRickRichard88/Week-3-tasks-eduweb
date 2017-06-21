@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EduWeb week 3 Task 4</title>
+	<script src="app/app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <p>
+      Stwórz odtwarzacz filmów, który udostępni podstawowe funkcjonalności. Będą to możliwość odtwarzania, pauzowania, wyświetlania paska postępu (który umożliwi równieżprzewijanie). Wyświetl również czas trwania całego filmu, a także aktualny czas postępu.
+    </p>
+  </div>
+</div> 
+   <div class="container">
+     <div class="row">
+      <div class="videoPlayer" id="videoPlayer">
+        <video width="100%">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+          <a target="_blank" href="https://www.w3schools.com/html/html5_video.asp">Pobierz video oficjalnej strony</a>
+        </video>
+
+        <div class="controls">
+          <span class="playPause glyphicon glyphicon-play" aria-hidden="true"></span>
+          <div class="progressBar" >
+            <div class="playbackBar"></div>
+            <div id="loading" class="loadedBar"></div>
+          </div>
+          <div class="time">
+            <span class="currentTime">0:00</span>
+            <span class="totalTime">0:00</span>
+          </div>
+<!--            <input type="range" name="volume" min="0" max="100" value="100" >-->
+            <div class="fullVolume" >
+              <div class="currentVolume"></div>
+            </div>
+          
+        </div>
+       </div>
+    </div>
+  </div> 
+</body>
+</html>
